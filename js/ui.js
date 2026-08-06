@@ -221,3 +221,34 @@ function initInteractiveBadges() {
   });
 }
 
+// Mobile Navigation Drawer Handler
+function initMobileDrawer() {
+  const toggleBtn = document.getElementById('mobile-toggle-btn');
+  const closeBtn = document.getElementById('drawer-close-btn');
+  const drawer = document.getElementById('mobile-drawer');
+  const mobileLinks = document.querySelectorAll('.mobile-nav-link');
+
+  if (!toggleBtn || !drawer) return;
+
+  function openDrawer() {
+    drawer.classList.add('open');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove('open');
+    document.body.style.overflow = 'auto';
+  }
+
+  toggleBtn.addEventListener('click', openDrawer);
+
+  if (closeBtn) {
+    closeBtn.addEventListener('click', closeDrawer);
+  }
+
+  mobileLinks.forEach(link => {
+    link.addEventListener('click', closeDrawer);
+  });
+}
+
+

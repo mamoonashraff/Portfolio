@@ -33,6 +33,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initInteractiveBadges();
   }
 
+  // 7. Initialize Mobile Navigation Drawer
+  if (typeof initMobileDrawer === 'function') {
+    initMobileDrawer();
+  }
+
   // 6. Close Modal Event Listeners
   const modalCloseBtn = document.getElementById('modal-close-btn');
   const modalOverlay = document.getElementById('project-modal');
