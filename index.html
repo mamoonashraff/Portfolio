@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mamoon Ashraf | Aspiring Cybersecurity Specialist & Security Engineer</title>
+  <meta name="description" content="Official Portfolio of Mamoon Ashraf - Computer Science Student at Institute of Space Technology (IST), Pakistan. Pursuing Cisco Certifications in Cybersecurity, Networking & Python. Founder of Rozgar.ai.">
+  
+  <!-- FontAwesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheets -->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+  <link rel="stylesheet" href="css/animations.css">
+</head>
+<body>
+
+  <!-- Ambient Light Orbs -->
+  <div class="ambient-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+  </div>
+
+  <!-- Floating Navbar -->
+  <nav class="navbar">
+    <a href="#hero" class="nav-brand">
+      <span class="brand-dot"></span>
+      <span>Mamoon Ashraf</span>
+    </a>
+    
+    <ul class="nav-menu">
+      <li><a href="#about" class="nav-link">About</a></li>
+      <li><a href="#education" class="nav-link">Education</a></li>
+      <li><a href="#projects" class="nav-link">Projects</a></li>
+      <li><a href="#skills" class="nav-link">Skills</a></li>
+      <li><a href="#creative" class="nav-link">Beyond Coding</a></li>
+      <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle-btn" id="theme-toggle-btn" title="Toggle Theme">
+        <i class="fas fa-sun" id="theme-icon"></i>
+      </button>
+      <a href="#contact" class="btn btn-primary" style="padding:10px 20px; font-size:0.88rem;">Let's Connect</a>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section id="hero" class="section hero-section">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="status-dot"></span>
+            <span>Available for Cybersecurity & Web/AI Collaborations</span>
+          </div>
+
+          <h1 class="hero-title">
+            Building Secure <br>
+            <span class="gradient-text">Cybersecurity & AI Tech</span>
+          </h1>
+
+          <div class="hero-typing-container">
+            <span>&gt;&nbsp;</span>
+            <span id="typing-text"></span>
+            <span class="typing-cursor"></span>
+          </div>
+
+          <p class="hero-bio">
+            Hi! I'm <strong>Mamoon Ashraf</strong>, a passionate Computer Science student at the <strong>Institute of Space Technology (IST), Pakistan</strong>. Currently pursuing Cisco certifications in <strong>Cybersecurity, Computer Networking & Python</strong>. Founder of <strong>Rozgar.ai</strong>.
+          </p>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <span>View My Work</span>
+              <i class="fas fa-arrow-right"></i>
+            </a>
+            <a href="#contact" class="btn btn-outline">
+              <i class="fas fa-paper-plane"></i>
+              <span>Get In Touch</span>
+            </a>
+            
+            <!-- Quick Social Media Buttons in Hero -->
+            <div style="display:flex; gap:12px; align-items:center; margin-left:8px;">
+              <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://github.com/mamoonashraff" target="_blank" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/mamoon__ashraf" target="_blank" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Avatar Box -->
+        <div class="hero-avatar-container">
+          <div class="avatar-glass-frame">
+            <img src="assets/avatar.jpg" alt="Mamoon Ashraf" class="avatar-img" id="hero-avatar-image">
+            
+            <div class="floating-badge badge-top-right interactive-badge" id="interactive-top-badge" title="Click to change badge!">
+              <i class="fas fa-shield-halved badge-icon" id="badge-icon-el"></i>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted)" id="badge-sub-el">Cisco In-Progress</div>
+                <div id="badge-title-el">Cyber & Networks</div>
+              </div>
+            </div>
+
+            <div class="floating-badge badge-bottom-left">
+              <i class="fas fa-rocket badge-icon"></i>
+              <div>
+                <div style="font-size:0.75rem; color:var(--text-muted)">Founder (In Dev)</div>
+                <div>Rozgar.ai 🚀</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Metrics Stats -->
+      <div class="stats-grid">
+        <div class="glass-card stat-card">
+          <div class="stat-value">2nd</div>
+          <div class="stat-label">Semester BS CS</div>
+          <div class="stat-subtext">IST Islamabad, Pakistan</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">3+</div>
+          <div class="stat-label">Featured Projects</div>
+          <div class="stat-subtext">AI, Mobile & Security DBs</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">10+</div>
+          <div class="stat-label">Core Tech Stack</div>
+          <div class="stat-subtext">Linux, Python, C++, SQL</div>
+        </div>
+        <div class="glass-card stat-card">
+          <div class="stat-value">Cisco</div>
+          <div class="stat-label">Certifications</div>
+          <div class="stat-subtext">In Progress (Cyber, Net & Py)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About & Education Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">About & Journey</span>
+        <h2 class="section-title">Driven by Innovation & Security</h2>
+        <p class="section-subtitle">From Karak, Khyber Pakhtunkhwa to studying CS at Institute of Space Technology</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="glass-card edu-card reveal-on-scroll">
+          <span class="edu-badge"><i class="fas fa-user-shield"></i> My Story & Mission</span>
+          <h3 style="font-size:1.6rem; margin-bottom:16px;">Passionate Security Engineer</h3>
+          <p style="color:var(--text-secondary); margin-bottom:16px;">
+            Growing up in Karak, Khyber Pakhtunkhwa, Pakistan, I learned the core values of hard work, consistency, and relentless self-improvement. These principles drive my university journey every day.
+          </p>
+          <p style="color:var(--text-secondary);">
+            My ultimate mission is to become a leading <strong>Cybersecurity Specialist & Security Engineer</strong>, protecting systems, networks, and applications from vulnerabilities while building secure software.
+          </p>
+        </div>
+
+        <div class="glass-card edu-card reveal-on-scroll" id="education">
+          <span class="edu-badge"><i class="fas fa-university"></i> Academic Profile</span>
+          <h3 style="font-size:1.6rem; margin-bottom:8px;">BS in Computer Science (BSCS)</h3>
+          <p style="color:var(--accent-cyan); font-weight:600; margin-bottom:16px;">Institute of Space Technology (IST), Pakistan</p>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">
+            Currently in my 2nd Semester, building a strong core in algorithms, database design, calculus, and software engineering.
+          </p>
+          
+          <div style="margin-top:20px; font-weight:600; font-size:0.9rem;">Key Coursework:</div>
+          <div class="course-grid">
+            <div class="course-item"><i class="fas fa-code" style="color:var(--accent-cyan)"></i> Object-Oriented Prog (OOP)</div>
+            <div class="course-item"><i class="fas fa-database" style="color:var(--accent-purple)"></i> Database Systems</div>
+            <div class="course-item"><i class="fas fa-calculator" style="color:var(--accent-gold)"></i> Calculus & Geometry</div>
+            <div class="course-item"><i class="fas fa-microchip" style="color:var(--accent-emerald)"></i> Digital Logic Design</div>
+            <div class="course-item"><i class="fas fa-terminal" style="color:var(--accent-cyan)"></i> C++ Fundamentals</div>
+            <div class="course-item"><i class="fas fa-layer-group" style="color:var(--accent-blue)"></i> Data Structures</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Showcase Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Featured Work</span>
+        <h2 class="section-title">Projects & Real-World Software</h2>
+        <p class="section-subtitle">A showcase of AI platforms, web stores, and database systems built from scratch</p>
+      </div>
+
+      <!-- Filter Buttons -->
+      <div class="project-filters">
+        <button class="filter-btn active" data-filter="all">All Work</button>
+        <button class="filter-btn" data-filter="ai-mobile">AI & Mobile</button>
+        <button class="filter-btn" data-filter="web">Web Apps</button>
+        <button class="filter-btn" data-filter="database">Databases</button>
+      </div>
+
+      <!-- Dynamic Projects Grid -->
+      <div class="projects-grid" id="projects-grid">
+        <!-- Rendered dynamically by js/ui.js -->
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills Matrix Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Technical Radar</span>
+        <h2 class="section-title">Skills & Technologies</h2>
+        <p class="section-subtitle">Technologies, programming languages, and frameworks I work with</p>
+      </div>
+
+      <div class="skills-container">
+        <!-- Programming Languages Progress Bars -->
+        <div class="glass-card skills-box reveal-on-scroll">
+          <h3 class="box-title">
+            <i class="fas fa-laptop-code" style="color:var(--accent-cyan)"></i>
+            <span>Programming & System Languages</span>
+          </h3>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Python</span>
+              <span class="skill-badge">Security Scripting (88%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">C++</span>
+              <span class="skill-badge">OOP & Systems Architecture (88%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="88"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">Linux & Bash</span>
+              <span class="skill-badge">Cybersecurity & Terminal (82%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="82"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">SQL (MySQL)</span>
+              <span class="skill-badge">Relational DBs (85%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="85"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">JavaScript & Web UI</span>
+              <span class="skill-badge">Interactive Web (78%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="78"></div>
+            </div>
+          </div>
+
+          <div class="skill-item">
+            <div class="skill-info">
+              <span class="skill-name">HTML5 & CSS3</span>
+              <span class="skill-badge">Glassmorphism & Responsive (92%)</span>
+            </div>
+            <div class="progress-bar-bg">
+              <div class="progress-bar-fill" data-level="92"></div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Target Domains & Frameworks -->
+        <div class="glass-card skills-box reveal-on-scroll">
+          <h3 class="box-title">
+            <i class="fas fa-shield-halved" style="color:#ef4444"></i>
+            <span>Cybersecurity Domains & Tools</span>
+          </h3>
+
+          <div class="domains-grid">
+            <div class="domain-pill" style="border-color:#ef4444; color:#ef4444;"><i class="fas fa-shield-alt"></i> Cybersecurity & Ethical Hacking</div>
+            <div class="domain-pill"><i class="fas fa-network-wired" style="color:var(--accent-cyan)"></i> Network Security Architecture</div>
+            <div class="domain-pill"><i class="fab fa-linux" style="color:var(--accent-emerald)"></i> Linux System Admin</div>
+            <div class="domain-pill"><i class="fas fa-bug" style="color:var(--accent-gold)"></i> Vulnerability Analysis</div>
+            <div class="domain-pill"><i class="fas fa-robot" style="color:var(--accent-cyan)"></i> Artificial Intelligence</div>
+            <div class="domain-pill"><i class="fas fa-mobile-alt" style="color:var(--accent-purple)"></i> Flutter Cross-Platform</div>
+            <div class="domain-pill"><i class="fas fa-fire" style="color:var(--accent-gold)"></i> Firebase Backend</div>
+            <div class="domain-pill"><i class="fab fa-git-alt" style="color:#f97316"></i> Git & GitHub</div>
+          </div>
+
+          <div style="margin-top:32px; padding:20px; background:rgba(255,255,255,0.03); border-radius:var(--radius-md); border:1px solid var(--bg-glass-border);">
+            <div style="font-weight:700; color:var(--accent-gold); margin-bottom:6px;">
+              <i class="fas fa-certificate"></i> Cisco Certifications (In Progress)
+            </div>
+            <p style="font-size:0.9rem; color:var(--text-secondary);">
+              Currently in active pursuit of professional Cisco certifications in <strong>Cybersecurity, Computer Networking Fundamentals, and Python Programming</strong>.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Creative Beyond Coding Section -->
+  <section id="creative" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Passions & Hobbies</span>
+        <h2 class="section-title">Beyond Coding</h2>
+        <p class="section-subtitle">Exploring security, digital media creation, and fine art sketching</p>
+      </div>
+
+      <div class="creative-grid">
+        <div class="glass-card creative-card reveal-on-scroll">
+          <div class="creative-icon"><i class="fas fa-shield-halved"></i></div>
+          <h3 style="margin-bottom:12px;">Cyber Security</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">
+            Exploring ethical hacking, networking protocols, Linux terminal commands, and system vulnerability assessment.
+          </p>
+        </div>
+
+        <div class="glass-card creative-card reveal-on-scroll">
+          <div class="creative-icon" style="background:rgba(56,189,248,0.12); color:var(--accent-cyan);"><i class="fas fa-video"></i></div>
+          <h3 style="margin-bottom:12px;">Digital Content Creation</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">
+            Managing monetized video channels, script editing, thumbnail design, and video editing using CapCut Desktop.
+          </p>
+        </div>
+
+        <div class="glass-card creative-card reveal-on-scroll">
+          <div class="creative-icon" style="background:rgba(251,191,36,0.12); color:var(--accent-gold);"><i class="fas fa-palette"></i></div>
+          <h3 style="margin-bottom:12px;">Fine Art & Drawing</h3>
+          <p style="color:var(--text-secondary); font-size:0.95rem;">
+            Practicing structural portrait drawing, proportions sketching, and classical pencil illustration.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">Get In Touch</span>
+        <h2 class="section-title">Let's Build Something Amazing</h2>
+        <p class="section-subtitle">Open for cybersecurity internships, research collaborations, open-source projects & tech talk</p>
+      </div>
+
+      <div class="contact-grid">
+        <div class="glass-card contact-info-box reveal-on-scroll">
+          <div>
+            <h3 style="font-size:1.5rem; margin-bottom:10px;">Contact Information</h3>
+            <p style="color:var(--text-secondary); font-size:0.95rem;">Feel free to drop a message or connect on social platforms.</p>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <div class="info-title">Email Address</div>
+              <div class="info-value"><a href="mailto:mamoonashraf831@gmail.com" style="color:inherit;">mamoonashraf831@gmail.com</a></div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <div class="info-title">Location</div>
+              <div class="info-value">Karak / Islamabad (IST), Pakistan</div>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <div class="info-icon"><i class="fas fa-shield-halved"></i></div>
+            <div>
+              <div class="info-title">Status</div>
+              <div class="info-value">Open for Cybersecurity Internships</div>
+            </div>
+          </div>
+
+          <!-- Contact Social Media Links -->
+          <div style="display:flex; gap:16px; margin-top:10px;">
+            <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/mamoonashraff" target="_blank" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/mamoon__ashraf" target="_blank" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="glass-card contact-form-box reveal-on-scroll">
+          <form id="contact-form">
+            <div class="form-group">
+              <label class="form-label" for="user-name">Your Name</label>
+              <input type="text" id="user-name" class="form-input" placeholder="e.g. Ali Khan" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="user-email">Your Email</label>
+              <input type="email" id="user-email" class="form-input" placeholder="e.g. ali@example.com" required>
+            </div>
+
+            <div class="form-group">
+              <label class="form-label" for="user-message">Your Message</label>
+              <textarea id="user-message" class="form-textarea" placeholder="Hi Mamoon, I'd like to collaborate on..." required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
+              <span>Send Message</span>
+              <i class="fas fa-paper-plane"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="display:flex; justify-content:center; gap:16px; margin-bottom:16px;">
+        <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/mamoonashraff" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/mamoon__ashraf" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-instagram"></i></a>
+      </div>
+      <p>© 2026 <strong>Mamoon Ashraf</strong>. All rights reserved.</p>
+      <p style="font-size:0.8rem; margin-top:6px; color:var(--text-muted);">Institute of Space Technology (IST), Pakistan</p>
+    </div>
+  </footer>
+
+  <!-- Project Detail Modal Popup -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="glass-card modal-content">
+      <button class="modal-close" id="modal-close-btn">&times;</button>
+      <div id="modal-body-content">
+        <!-- Injected dynamically by js/ui.js -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification Container -->
+  <div class="toast-container" id="toast-container"></div>
+
+  <!-- Scripts -->
+  <script src="js/data.js"></script>
+  <script src="js/theme.js"></script>
+  <script src="js/ui.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

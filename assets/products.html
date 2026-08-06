@@ -1,0 +1,183 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Barakah Scents - Products</title>
+    <link rel="stylesheet" href="asset/style/style.css" />
+    <link rel="icon" href="asset/images/logo.png" type="image/png" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">Barakah Scents</div>
+      <nav class="nav">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="products.html">Products</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-right">
+        <div id="authButtons">
+          <a href="auth.html" class="nav-btn">Login</a>
+          <a href="auth.html" class="nav-btn signup">Sign Up</a>
+        </div>
+        <div id="accountSection" style="display: none"></div>
+      </div>
+      <a href="products.html" class="shop-btn">Shop Now</a>
+    </header>
+
+    <section class="filter-section">
+      <input
+        type="text"
+        id="searchInput"
+        placeholder="🔍 Search products..."
+        oninput="filterProducts()"
+      />
+      <select id="sortSelect" onchange="filterProducts()">
+        <option value="">Sort By</option>
+        <option value="low">Price: Low to High</option>
+        <option value="high">Price: High to Low</option>
+      </select>
+    </section>
+
+    <div class="category-bar">
+      <button
+        class="cat-btn active"
+        data-cat="All"
+        onclick="filterByCategory('All')"
+      >
+        All
+      </button>
+      <button
+        class="cat-btn"
+        data-cat="Rose"
+        onclick="filterByCategory('Rose')"
+      >
+        🌹 Rose
+      </button>
+      <button
+        class="cat-btn"
+        data-cat="Musk"
+        onclick="filterByCategory('Musk')"
+      >
+        🌙 Musk
+      </button>
+      <button class="cat-btn" data-cat="Oud" onclick="filterByCategory('Oud')">
+        🪵 Oud
+      </button>
+      <button
+        class="cat-btn"
+        data-cat="Sandalwood"
+        onclick="filterByCategory('Sandalwood')"
+      >
+        🌿 Sandalwood
+      </button>
+      <button
+        class="cat-btn"
+        data-cat="Saffron"
+        onclick="filterByCategory('Saffron')"
+      >
+        🌾 Saffron
+      </button>
+    </div>
+
+    <section class="featured-products">
+      <h2>All Products</h2>
+      <div class="products-grid" id="allProductGrid"></div>
+    </section>
+
+    <section
+      id="reviews-container"
+      style="padding: 40px; background: #f8f5f0"
+    ></section>
+
+    <div id="cartSidebar" class="cart-sidebar">
+      <div class="cart-header">
+        <h3>🛒 Your Cart</h3>
+        <button onclick="toggleCart()" class="close-cart">✕</button>
+      </div>
+      <div id="cartItems" class="cart-items"></div>
+      <div class="cart-footer">
+        <p>Total: <strong id="cartTotal">Rs. 0</strong></p>
+        <div style="width: 100%">
+          <button
+            type="button"
+            onclick="checkout()"
+            style="
+              width: 100%;
+              background: #ffb703;
+              color: black;
+              padding: 12px;
+              border: none;
+              border-radius: 10px;
+              font-size: 15px;
+              font-weight: 700;
+              cursor: pointer;
+            "
+          >
+            🚀 Secure Server Checkout (Save to DB)
+          </button>
+        </div>
+      </div>
+    </div>
+    <div id="cartOverlay" class="cart-overlay" onclick="toggleCart()"></div>
+    <div class="cart-float" onclick="toggleCart()">
+      🛒 <span id="cartCount">0</span>
+    </div>
+
+    <footer class="site-footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <h3>Barakah Scents</h3>
+          <p>Timeless fragrances inspired by Islamic tradition.</p>
+        </div>
+        <div class="footer-col">
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h3>Contact Us</h3>
+          <p>📞 +92 335 9764831</p>
+          <p>✉️ info@barakahscents.com</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          &copy; 2026 Barakah Scents. All Rights Reserved. | Designed by
+          <strong>QuantumSquad</strong>
+        </p>
+      </div>
+    </footer>
+
+    <script src="asset/script.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        setTimeout(() => {
+          const container = document.getElementById("reviews-container");
+          if (!container) return;
+          container.innerHTML =
+            "<h2 style='color:#1A535C;font-family:Playfair Display,serif;text-align:center;margin-bottom:30px;'>Product Reviews</h2>";
+          getAllProducts().forEach((p) => {
+            const div = document.createElement("div");
+            div.id = `review-section-${p.id}`;
+            div.style.cssText = "max-width:700px;margin:0 auto 30px;";
+            div.innerHTML = `<h3 style="color:#1A535C;margin-bottom:8px;">${p.name}</h3>`;
+            container.appendChild(div);
+            renderReviewSection(p.id);
+          });
+        }, 100);
+      });
+    </script>
+  </body>
+</html>
