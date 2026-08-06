@@ -894,6 +894,7 @@
 }
 
 /* Responsive Media Queries */
+/* Responsive Media Queries */
 @media (max-width: 992px) {
   .hero-grid {
     grid-template-columns: 1fr;
@@ -907,6 +908,7 @@
   
   .hero-cta {
     justify-content: center;
+    gap: 12px;
   }
   
   .hero-avatar-container {
@@ -927,6 +929,14 @@
 }
 
 @media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .section {
+    padding: 60px 0;
+  }
+
   .nav-menu, .nav-cta-desktop {
     display: none !important;
   }
@@ -936,82 +946,108 @@
   }
 
   .navbar {
-    top: 12px;
-    width: calc(100% - 24px);
-    padding: 10px 18px;
+    top: 10px;
+    width: calc(100% - 20px);
+    padding: 8px 16px;
   }
 
   .hero-section {
-    padding-top: 110px;
+    padding-top: 100px;
+    padding-bottom: 40px;
   }
   
   .hero-title {
-    font-size: 2.5rem;
+    font-size: 2.2rem;
+    line-height: 1.25;
   }
   
   .section-title {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+
+  .section-header {
+    margin-bottom: 36px;
   }
 
   .avatar-glass-frame {
-    width: 280px;
-    height: 280px;
+    width: 270px;
+    height: 270px;
   }
 
   .badge-top-right {
-    top: -12px;
-    right: -10px;
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    top: -10px;
+    right: 0px;
+    font-size: 0.75rem;
+    padding: 6px 10px;
   }
 
   .badge-bottom-left {
-    bottom: -12px;
-    left: -10px;
-    font-size: 0.8rem;
-    padding: 6px 12px;
+    bottom: -10px;
+    left: 0px;
+    font-size: 0.75rem;
+    padding: 6px 10px;
   }
 
   .projects-grid {
     grid-template-columns: 1fr;
+    gap: 20px;
   }
 
   .modal-content {
-    padding: 24px 16px;
+    padding: 20px 14px;
     max-width: 96vw;
+    border-radius: var(--radius-md);
   }
 }
 
 @media (max-width: 480px) {
   .hero-title {
-    font-size: 2.1rem;
+    font-size: 1.85rem;
   }
 
   .hero-typing-container {
-    font-size: 1rem;
+    font-size: 0.95rem;
+    height: 36px;
+  }
+
+  .hero-badge {
+    font-size: 0.78rem;
+    padding: 6px 12px;
   }
 
   .avatar-glass-frame {
-    width: 240px;
-    height: 240px;
+    width: 230px;
+    height: 230px;
   }
 
   .stats-grid {
     grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .btn {
     width: 100%;
     justify-content: center;
+    padding: 12px 20px;
+    font-size: 0.95rem;
   }
 
   .badge-top-right, .badge-bottom-left {
-    padding: 6px 10px;
-    font-size: 0.75rem;
+    padding: 5px 8px;
+    font-size: 0.7rem;
+    gap: 6px;
+  }
+
+  .badge-icon {
+    font-size: 1rem;
   }
 
   .course-grid {
     grid-template-columns: 1fr;
+  }
+
+  .contact-info-box, .contact-form-box, .edu-card, .skills-box {
+    padding: 24px 16px;
   }
 }
 
