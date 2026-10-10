@@ -6,31 +6,31 @@ const PORTFOLIO_DATA = {
     hometown: "Karak, Khyber Pakhtunkhwa, Pakistan",
     university: "Institute of Space Technology (IST), Islamabad, Pakistan",
     degree: "Bachelor of Science in Computer Science (BSCS)",
-    semester: "2nd Semester (Completed 1st Year)",
+    semester: "3rd Semester (BSCS)",
     avatar: "assets/avatar.jpg",
-    statusBadge: "Available for Cybersecurity & Web/AI Collaborations",
-    bio: "Passionate Computer Science student at the Institute of Space Technology (IST) with a relentless drive for cybersecurity innovation. Founder of Rozgar.ai (In Active Development), exploring Ethical Hacking, Network Security, Penetration Testing, Linux Architecture, and modern Web & Mobile software.",
+    statusBadge: "Active Learner: Cisco CCNA & CyberOps | Open for Collaborations",
+    bio: "Passionate Computer Science student at the Institute of Space Technology (IST) pursuing Cybersecurity & Network Defense. Actively studying Cisco CCNA and Cisco CyberOps Associate, exploring Ethical Hacking, Network Security, Penetration Testing, Linux Architecture, and modern Software Engineering.",
     taglines: [
       "Aspiring Cybersecurity Specialist",
-      "Ethical Hacking & Network Security Enthusiast",
-      "Founder @ Rozgar.ai (In Active Development)",
-      "BS CS Student @ Institute of Space Technology"
+      "Cisco CCNA & CyberOps Aspirant",
+      "Network Security & Ethical Hacking Enthusiast",
+      "3rd Semester BS CS @ Institute of Space Technology"
     ]
   },
 
   stats: [
-    { label: "Completed Semester", value: "2nd", subtext: "BS CS @ IST Pakistan" },
-    { label: "Featured Projects", value: "3+", subtext: "AI, Web & OOP Games" },
+    { label: "Current Semester", value: "3rd", subtext: "BS CS @ IST Pakistan" },
+    { label: "Featured Projects", value: "2+", subtext: "Web & OOP Game Engine" },
     { label: "Core Technologies", value: "10+", subtext: "Linux, Python, C++, SQL" },
-    { label: "Certifications", value: "Cisco", subtext: "In Progress (Cyber, Net & Py)" }
+    { label: "Certifications", value: "Cisco", subtext: "In Progress (CCNA & CyberOps)" }
   ],
 
   education: {
     institution: "Institute of Space Technology (IST), Pakistan",
     degree: "BS Computer Science (BSCS)",
-    currentSemester: "2nd Semester",
+    currentSemester: "3rd Semester",
     location: "Islamabad, Pakistan",
-    description: "Building a rigorous academic foundation in programming, cybersecurity fundamentals, database architecture, and computer systems.",
+    description: "Currently in my 3rd Semester, building a strong core in algorithms, database design, computer networks, and cybersecurity.",
     coursework: [
       "Object-Oriented Programming (OOP)",
       "Database Systems & Relational Design",
@@ -42,29 +42,6 @@ const PORTFOLIO_DATA = {
   },
 
   projects: [
-    {
-      id: "rozgar-ai",
-      title: "Rozgar.ai",
-      category: "ai-mobile",
-      role: "Founder & Lead Developer",
-      status: "In Active Development 🚀",
-      featured: true,
-      image: "assets/rozgar_ai.jpg",
-      description: "An AI-powered operating system and fraud analyzer platform currently in active development, designed to empower local Pakistani freelancers against fraudulent clients and work scams.",
-      tags: ["In Active Dev", "Flutter", "Firebase", "Gemini API", "AI Fraud Analysis"],
-      details: {
-        problem: "Local freelancers frequently face payment scams, fake client postings, and contract disputes without protection.",
-        solution: "Rozgar.ai is currently being built to leverage Google Gemini AI algorithms and Flutter mobile architecture to analyze job proposals, verify client history, and provide automated contract safeguards.",
-        features: [
-          "AI Fraud Analyzer powered by Gemini API (Building)",
-          "Freelancer OS Dashboard for workflow management (In Progress)",
-          "Cross-Platform Mobile App for iOS & Android (In Active Dev)",
-          "Real-time Firebase backend integration"
-        ],
-        github: "https://github.com/mamoonashraff",
-        demo: "#"
-      }
-    },
     {
       id: "barakah-scents",
       title: "Barakah Scents",
@@ -123,21 +100,21 @@ const PORTFOLIO_DATA = {
       { name: "HTML5 & CSS3", level: 92, badge: "Modern UI System" }
     ],
     frameworks: [
-      { name: "Flutter", level: 80, badge: "Cross-Platform Apps" },
-      { name: "Firebase", level: 82, badge: "Real-time Cloud Backend" },
+      { name: "Cisco CCNA & CyberOps", level: 85, badge: "Cisco Academy (In Progress)" },
+      { name: "Network Security & Packet Tracer", level: 82, badge: "Routing, Switching & Ops" },
       { name: "Git & GitHub", level: 88, badge: "Version Control" },
-      { name: "Networking & Security Tools", level: 85, badge: "Cisco In-Progress" },
+      { name: "Flutter & Firebase", level: 80, badge: "Cross-Platform Development" },
       { name: "VS Code", level: 92, badge: "Primary IDE" }
     ],
     domains: [
       "Cybersecurity & Ethical Hacking",
-      "Object-Oriented Programming (OOP)",
       "Network Security Architecture",
+      "Cisco CCNA (Routing & Switching)",
+      "Cisco CyberOps (Security Operations)",
+      "Object-Oriented Programming (OOP)",
       "Linux System Administration",
       "Application Vulnerability Analysis",
-      "Artificial Intelligence (AI)",
-      "Full-Stack Web Development",
-      "Cross-Platform Mobile Dev"
+      "Full-Stack Web Development"
     ]
   },
 
@@ -158,10 +135,16 @@ const PORTFOLIO_DATA = {
 
   certifications: [
     {
-      title: "Cisco Certifications (In Progress)",
+      title: "Cisco CCNA (In Progress)",
       org: "Cisco Networking Academy",
       status: "In Active Pursuit",
-      focus: "Currently in active pursuit of professional certifications in Cybersecurity Essentials, Computer Networking Fundamentals, and Python Security Scripting."
+      focus: "Cisco Certified Network Associate — Network fundamentals, IP connectivity, IP services, security fundamentals, automation and programmability."
+    },
+    {
+      title: "Cisco CyberOps Associate (In Progress)",
+      org: "Cisco Networking Academy",
+      status: "In Active Pursuit",
+      focus: "Cisco Certified CyberOps Associate — Security concepts, security monitoring, host-based analysis, network intrusion analysis, and security incident response."
     }
   ],
 
@@ -172,6 +155,6 @@ const PORTFOLIO_DATA = {
     linkedin: "https://www.linkedin.com/in/mamoon-ashraff",
     facebook: "https://www.facebook.com/share/1Gfc7YpvxW/",
     instagram: "https://instagram.com/mamoon__ashraf",
-    availability: "Open for Cybersecurity Internships, AI Collaborations & Research"
+    availability: "Open for Cybersecurity Internships, Network Security & Tech Collaborations"
   }
 };

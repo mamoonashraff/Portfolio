@@ -188,9 +188,9 @@ function showToast(message) {
 
 // Interactive Hero Floating Badge Toggle
 const HERO_BADGES = [
-  { icon: "fas fa-shield-halved", sub: "Cisco In-Progress", title: "Cyber & Networks", color: "var(--accent-gold)" },
-  { icon: "fas fa-graduation-cap", sub: "BS CS Student", title: "IST Pakistan", color: "var(--accent-cyan)" },
-  { icon: "fas fa-code", sub: "Security & Dev", title: "Python, C++ & Web", color: "var(--accent-purple)" },
+  { icon: "fas fa-shield-halved", sub: "Cisco In-Progress", title: "CCNA & CyberOps", color: "var(--accent-gold)" },
+  { icon: "fas fa-graduation-cap", sub: "3rd Sem BS CS", title: "IST Pakistan", color: "var(--accent-cyan)" },
+  { icon: "fas fa-network-wired", sub: "Network Defense", title: "Cybersecurity", color: "var(--accent-purple)" },
   { icon: "fas fa-location-dot", sub: "Hometown", title: "Karak, KP", color: "var(--accent-emerald)" }
 ];
 

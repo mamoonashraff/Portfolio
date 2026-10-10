@@ -5,7 +5,7 @@
 [![LinkedIn Profile](https://img.shields.io/badge/LinkedIn-Mamoon_Ashraf-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/mamoon-ashraff)
 [![University](https://img.shields.io/badge/University-IST_Pakistan-6366f1?style=for-the-badge&logo=education&logoColor=white)](https://www.ist.edu.pk/)
 
-> Official personal portfolio website of **Mamoon Ashraf** — Computer Science student at **Institute of Space Technology (IST), Pakistan**, aspiring **Cybersecurity Specialist & Security Engineer**, and Founder of **Rozgar.ai**.
+> Official personal portfolio website of **Mamoon Ashraf** — 3rd Semester Computer Science student at **Institute of Space Technology (IST), Pakistan**, aspiring **Cybersecurity Specialist & Security Engineer**, actively pursuing **Cisco CCNA & CyberOps Associate**.
 
 ---
 
@@ -20,7 +20,7 @@
 - **Ultra-Modern Glassmorphism UI**: Built with custom Vanilla CSS variables, smooth glass blurs, and dynamic background ambient glowing light orbs.
 - **Dark / Light Theme Switcher**: Toggle between cosmic dark theme and clean light theme with local storage persistence.
 - **Interactive Hero Section**: Dynamic typing effect cycling through career titles, status badges, and a custom clickable floating badge that rotates through key highlights.
-- **Filterable Projects Showcase**: Category tabs (*All Work*, *AI & Mobile*, *Web Apps*, *Databases*) with rich cards and detailed modal case studies.
+- **Filterable Projects Showcase**: Category tabs (*All Work*, *Web Apps*, *OOP & Games*) with rich cards and detailed modal case studies.
 - **Technical Radar & Animated Skill Bars**: Animated progress bars on scroll for Python, C++, SQL, Linux, JavaScript, and HTML/CSS.
 - **Beyond Coding**: Showcasing cybersecurity research, fine art portrait sketching, and digital video production.
 - **Responsive & Accessible**: Mobile-first responsive layout tailored across desktop, tablet, and mobile displays.
@@ -29,18 +29,13 @@
 
 ## 🚀 Featured Projects
 
-### 1. **Rozgar.ai** *(In Active Development)*
-- **Role**: Founder & Lead Developer
-- **Tech Stack**: Flutter, Firebase, Gemini API, AI Fraud Analysis
-- **Description**: An AI-powered operating system and fraud analyzer platform designed to empower local Pakistani freelancers against fraudulent clients and work scams.
-
-### 2. **Barakah Scents**
+### 1. **Barakah Scents**
 - **Role**: Frontend Developer (Team Collaboration)
 - **Tech Stack**: HTML5, CSS3, JavaScript, GitHub Pages
 - **Description**: A luxury front-end e-commerce web application designed for a fragrance brand featuring dark glassmorphism layouts, product catalogs, and responsive galleries.
 - **Live Demo**: [https://mamoonashraff.github.io/Barakah-Scents-Website-Project/](https://mamoonashraff.github.io/Barakah-Scents-Website-Project/)
 
-### 3. **Zelda RPG Game Engine**
+### 2. **Zelda RPG Game Engine**
 - **Role**: OOP Developer & Game Architect
 - **Tech Stack**: C++ / Python, OOP Concepts, Polymorphism, Inheritance, Game Loops
 - **Description**: An Object-Oriented 2D RPG game built to demonstrate advanced OOP concepts, entity hierarchy, player mechanics, collision handling, and custom state machines.
@@ -54,9 +49,9 @@
 | --- | --- |
 | **Languages** | Python, C++, SQL, JavaScript, HTML5, CSS3, Bash |
 | **Cybersecurity Focus** | Network Security, Ethical Hacking, Linux System Admin, Vulnerability Analysis |
-| **Certifications** | Cisco Networking Academy (*In Progress: Cybersecurity, Networking & Python*) |
-| **Web & Mobile** | Flutter, Firebase, Vanilla ES6 JavaScript, HTML5/CSS3 |
-| **Tools & OS** | Git & GitHub, VS Code, Linux Fundamentals |
+| **Certifications** | Cisco Networking Academy (*In Progress: Cisco CCNA & Cisco CyberOps Associate*) |
+| **Web & Software** | Vanilla ES6 JavaScript, HTML5/CSS3, Object-Oriented Software Design |
+| **Tools & OS** | Git & GitHub, VS Code, Linux Fundamentals, Cisco Packet Tracer |
 
 ---
 
@@ -105,7 +100,7 @@ To run this portfolio locally on your machine:
 
 ## 📬 Connect With Me
 
-- **Email**: [mamoonashraf831@gmail.com](mailto:mamoonashraf831@gmail.com)
+- **Email**: [mamoonashraff831@gmail.com](mailto:mamoonashraf831@gmail.com)
 - **LinkedIn**: [linkedin.com/in/mamoon-ashraff](https://www.linkedin.com/in/mamoon-ashraff)
 - **Facebook**: [facebook.com/share/1Gfc7YpvxW/](https://www.facebook.com/share/1Gfc7YpvxW/)
 - **Instagram**: [@mamoon__ashraf](https://instagram.com/mamoon__ashraf)
