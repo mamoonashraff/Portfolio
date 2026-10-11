@@ -29,13 +29,19 @@
 
 ## 🚀 Featured Projects
 
-### 1. **Barakah Scents**
+### 1. **Nexus Aurum AI (AI Season Hackathon)** 🏆
+- **Role**: AI Agent & Backend Engineer
+- **Tech Stack**: Python, FastAPI, Satellite GIS, Remote Sensing Spectral Math
+- **Description**: An autonomous AI geospatial mineral intelligence and satellite prospecting system engineered for the AI Season Hackathon. Analyzes multispectral satellite imagery (Sentinel & Landsat) and GIS telemetry to detect and score precious mineral deposits.
+- **Repository**: [https://github.com/mamoonashraff](https://github.com/mamoonashraff)
+
+### 2. **Barakah Scents**
 - **Role**: Frontend Developer (Team Collaboration)
 - **Tech Stack**: HTML5, CSS3, JavaScript, GitHub Pages
 - **Description**: A luxury front-end e-commerce web application designed for a fragrance brand featuring dark glassmorphism layouts, product catalogs, and responsive galleries.
 - **Live Demo**: [https://mamoonashraff.github.io/Barakah-Scents-Website-Project/](https://mamoonashraff.github.io/Barakah-Scents-Website-Project/)
 
-### 2. **Zelda RPG Game Engine**
+### 3. **Zelda RPG Game Engine**
 - **Role**: OOP Developer & Game Architect
 - **Tech Stack**: C++ / Python, OOP Concepts, Polymorphism, Inheritance, Game Loops
 - **Description**: An Object-Oriented 2D RPG game built to demonstrate advanced OOP concepts, entity hierarchy, player mechanics, collision handling, and custom state machines.

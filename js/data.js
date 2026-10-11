@@ -13,6 +13,7 @@ const PORTFOLIO_DATA = {
     taglines: [
       "Aspiring Cybersecurity Specialist",
       "Cisco CCNA & CyberOps Aspirant",
+      "AI Hackathon Project Builder",
       "Network Security & Ethical Hacking Enthusiast",
       "3rd Semester BS CS @ Institute of Space Technology"
     ]
@@ -20,7 +21,7 @@ const PORTFOLIO_DATA = {
 
   stats: [
     { label: "Current Semester", value: "3rd", subtext: "BS CS @ IST Pakistan" },
-    { label: "Featured Projects", value: "2+", subtext: "Web & OOP Game Engine" },
+    { label: "Featured Projects", value: "3+", subtext: "AI Hackathon, Web & Games" },
     { label: "Core Technologies", value: "10+", subtext: "Linux, Python, C++, SQL" },
     { label: "Certifications", value: "Cisco", subtext: "In Progress (CCNA & CyberOps)" }
   ],
@@ -32,16 +33,39 @@ const PORTFOLIO_DATA = {
     location: "Islamabad, Pakistan",
     description: "Currently in my 3rd Semester, building a strong core in algorithms, database design, computer networks, and cybersecurity.",
     coursework: [
-      "Object-Oriented Programming (OOP)",
-      "Database Systems & Relational Design",
-      "Programming Fundamentals (C++)",
-      "Calculus & Analytical Geometry",
-      "Data Structures & Algorithms",
-      "Digital Logic Design (DLD)"
+      "Data Structures",
+      "Computer Networks",
+      "Information Security",
+      "Software Engineering",
+      "Probability & Statistics",
+      "Multivariable Calculus"
     ]
   },
 
   projects: [
+    {
+      id: "nexus-aurum",
+      title: "Nexus Aurum AI",
+      category: "ai",
+      role: "AI Agent & Backend Engineer",
+      status: "AI Hackathon Project 🏆",
+      featured: true,
+      image: "assets/nexus_aurum.jpg",
+      description: "An autonomous AI geospatial mineral intelligence and satellite prospecting system engineered for the AI Season Hackathon. Analyzes multispectral satellite feeds and GIS telemetry to detect and score precious mineral deposits.",
+      tags: ["AI Hackathon", "Python", "FastAPI", "Satellite GIS", "Remote Sensing"],
+      details: {
+        problem: "Traditional mineral exploration relies on expensive, slow geological expeditions that take months to survey remote, mountainous terrain.",
+        solution: "Engineered an autonomous AI prospecting engine that leverages remote sensing spectral band math (Gossan & Clay alteration ratios, fault density analysis) and satellite telemetry to rank target locations with high precision prospectivity scores.",
+        features: [
+          "Multispectral satellite imagery band analysis (Gossan & Clay ratio algorithms)",
+          "Autonomous Target Ranking Engine with AI prospectivity scores",
+          "Interactive GIS mapping interface with real-time telemetry filters",
+          "FastAPI backend architecture with explainable geological breakdown"
+        ],
+        github: "https://github.com/mamoonashraff",
+        demo: "#"
+      }
+    },
     {
       id: "barakah-scents",
       title: "Barakah Scents",
@@ -92,7 +116,7 @@ const PORTFOLIO_DATA = {
 
   skills: {
     programming: [
-      { name: "Python", level: 88, badge: "Security Scripting & Pygame" },
+      { name: "Python", level: 88, badge: "Security Scripting & AI Engines" },
       { name: "C++", level: 90, badge: "OOP & Game/System Architecture" },
       { name: "SQL (MySQL)", level: 85, badge: "Relational DB Architecture" },
       { name: "JavaScript", level: 78, badge: "Interactive Web UI" },
@@ -101,9 +125,9 @@ const PORTFOLIO_DATA = {
     ],
     frameworks: [
       { name: "Cisco CCNA & CyberOps", level: 85, badge: "Cisco Academy (In Progress)" },
+      { name: "FastAPI & Python AI", level: 84, badge: "AI Agents & REST APIs" },
       { name: "Network Security & Packet Tracer", level: 82, badge: "Routing, Switching & Ops" },
       { name: "Git & GitHub", level: 88, badge: "Version Control" },
-      { name: "Flutter & Firebase", level: 80, badge: "Cross-Platform Development" },
       { name: "VS Code", level: 92, badge: "Primary IDE" }
     ],
     domains: [
@@ -111,9 +135,9 @@ const PORTFOLIO_DATA = {
       "Network Security Architecture",
       "Cisco CCNA (Routing & Switching)",
       "Cisco CyberOps (Security Operations)",
+      "Autonomous AI Agents & Geospatial ML",
       "Object-Oriented Programming (OOP)",
       "Linux System Administration",
-      "Application Vulnerability Analysis",
       "Full-Stack Web Development"
     ]
   },
