@@ -9,11 +9,11 @@ const PORTFOLIO_DATA = {
     semester: "3rd Semester (BSCS)",
     avatar: "assets/avatar.jpg",
     statusBadge: "Active Learner: Cisco CCNA & CyberOps | Open for Collaborations",
-    bio: "Passionate Computer Science student at the Institute of Space Technology (IST) pursuing Cybersecurity & Network Defense. Actively studying Cisco CCNA and Cisco CyberOps Associate, exploring Ethical Hacking, Network Security, Penetration Testing, Linux Architecture, and modern Software Engineering.",
+    bio: "Passionate Computer Science student at the Institute of Space Technology (IST) pursuing Cybersecurity & Network Defense. Builder of Nexus Sales AI (AgentHack 2024). Actively studying Cisco CCNA and Cisco CyberOps Associate, exploring Ethical Hacking, Network Security, Linux Architecture, and Autonomous AI Agents.",
     taglines: [
       "Aspiring Cybersecurity Specialist",
       "Cisco CCNA & CyberOps Aspirant",
-      "AI Hackathon Project Builder",
+      "AgentHack 2024 Project Builder",
       "Network Security & Ethical Hacking Enthusiast",
       "3rd Semester BS CS @ Institute of Space Technology"
     ]
@@ -21,7 +21,7 @@ const PORTFOLIO_DATA = {
 
   stats: [
     { label: "Current Semester", value: "3rd", subtext: "BS CS @ IST Pakistan" },
-    { label: "Featured Projects", value: "3+", subtext: "AI Hackathon, Web & Games" },
+    { label: "Featured Projects", value: "3+", subtext: "AI Swarm, Web & Games" },
     { label: "Core Technologies", value: "10+", subtext: "Linux, Python, C++, SQL" },
     { label: "Certifications", value: "Cisco", subtext: "In Progress (CCNA & CyberOps)" }
   ],
@@ -44,25 +44,25 @@ const PORTFOLIO_DATA = {
 
   projects: [
     {
-      id: "nexus-aurum",
-      title: "Nexus Aurum AI",
+      id: "nexus-sales-ai",
+      title: "Nexus Sales AI",
       category: "ai",
-      role: "AI Agent & Backend Engineer",
-      status: "AI Hackathon Project 🏆",
+      role: "AI Systems Architect & Full-Stack Developer",
+      status: "AgentHack 2024 Project 🏆",
       featured: true,
-      image: "assets/nexus_aurum.jpg",
-      description: "An autonomous AI geospatial mineral intelligence and satellite prospecting system engineered for the AI Season Hackathon. Analyzes multispectral satellite feeds and GIS telemetry to detect and score precious mineral deposits.",
-      tags: ["AI Hackathon", "Python", "FastAPI", "Satellite GIS", "Remote Sensing"],
+      image: "assets/nexus_sales_ai.jpg",
+      description: "An autonomous Multi-Agent SDR (Sales Development Representative) swarm built for the AgentHack 2024 Hackathon. Features an orchestrated 5-agent pipeline (Scout, Strategist, Copywriter, Negotiator, Closer) with dynamic RAG knowledge retrieval and automated lead qualification.",
+      tags: ["AgentHack 2024", "Multi-Agent Swarm", "RAG Pipeline", "JavaScript / Node", "Autonomous SDR"],
       details: {
-        problem: "Traditional mineral exploration relies on expensive, slow geological expeditions that take months to survey remote, mountainous terrain.",
-        solution: "Engineered an autonomous AI prospecting engine that leverages remote sensing spectral band math (Gossan & Clay alteration ratios, fault density analysis) and satellite telemetry to rank target locations with high precision prospectivity scores.",
+        problem: "B2B sales teams spend 70%+ of their time on repetitive prospecting, manual qualification, and follow-ups instead of closing high-value deals.",
+        solution: "Engineered an autonomous 5-Agent SDR Swarm that automates the entire sales funnel from initial company discovery to scheduling meetings using domain-driven RAG knowledge retrieval and dynamic objection-handling battlecards.",
         features: [
-          "Multispectral satellite imagery band analysis (Gossan & Clay ratio algorithms)",
-          "Autonomous Target Ranking Engine with AI prospectivity scores",
-          "Interactive GIS mapping interface with real-time telemetry filters",
-          "FastAPI backend architecture with explainable geological breakdown"
+          "5 Specialized Agent Personas: Scout, Strategist, Copywriter, Negotiator, Closer",
+          "Vector & Knowledge RAG Store matching service solutions to customer pain points",
+          "Automated 8-Stage Lead Pipeline Lifecycle with real-time intent classification",
+          "Dynamic hyper-personalized outreach generation (Email & WhatsApp channels)"
         ],
-        github: "https://github.com/mamoonashraff",
+        github: "https://github.com/mamoonashraff/nexus-sales-ai",
         demo: "#"
       }
     },
@@ -119,13 +119,13 @@ const PORTFOLIO_DATA = {
       { name: "Python", level: 88, badge: "Security Scripting & AI Engines" },
       { name: "C++", level: 90, badge: "OOP & Game/System Architecture" },
       { name: "SQL (MySQL)", level: 85, badge: "Relational DB Architecture" },
-      { name: "JavaScript", level: 78, badge: "Interactive Web UI" },
+      { name: "JavaScript", level: 82, badge: "Multi-Agent Swarms & UI" },
       { name: "Linux & Bash", level: 82, badge: "Cybersecurity & OS" },
       { name: "HTML5 & CSS3", level: 92, badge: "Modern UI System" }
     ],
     frameworks: [
       { name: "Cisco CCNA & CyberOps", level: 85, badge: "Cisco Academy (In Progress)" },
-      { name: "FastAPI & Python AI", level: 84, badge: "AI Agents & REST APIs" },
+      { name: "Autonomous AI Agents", level: 86, badge: "SDR Swarm & RAG Pipeline" },
       { name: "Network Security & Packet Tracer", level: 82, badge: "Routing, Switching & Ops" },
       { name: "Git & GitHub", level: 88, badge: "Version Control" },
       { name: "VS Code", level: 92, badge: "Primary IDE" }
@@ -135,7 +135,7 @@ const PORTFOLIO_DATA = {
       "Network Security Architecture",
       "Cisco CCNA (Routing & Switching)",
       "Cisco CyberOps (Security Operations)",
-      "Autonomous AI Agents & Geospatial ML",
+      "Autonomous Multi-Agent AI Swarms",
       "Object-Oriented Programming (OOP)",
       "Linux System Administration",
       "Full-Stack Web Development"

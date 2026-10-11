@@ -29,11 +29,11 @@
 
 ## 🚀 Featured Projects
 
-### 1. **Nexus Aurum AI (AI Season Hackathon)** 🏆
-- **Role**: AI Agent & Backend Engineer
-- **Tech Stack**: Python, FastAPI, Satellite GIS, Remote Sensing Spectral Math
-- **Description**: An autonomous AI geospatial mineral intelligence and satellite prospecting system engineered for the AI Season Hackathon. Analyzes multispectral satellite imagery (Sentinel & Landsat) and GIS telemetry to detect and score precious mineral deposits.
-- **Repository**: [https://github.com/mamoonashraff](https://github.com/mamoonashraff)
+### 1. **Nexus Sales AI (AgentHack 2024)** 🏆
+- **Role**: AI Systems Architect & Full-Stack Developer
+- **Tech Stack**: Autonomous Multi-Agent Swarm, RAG Store Pipeline, Node.js / JavaScript
+- **Description**: An autonomous Multi-Agent SDR (Sales Development Representative) swarm built for the AgentHack 2024 Hackathon. Features an orchestrated 5-agent pipeline (Scout, Strategist, Copywriter, Negotiator, Closer) with dynamic RAG knowledge retrieval, qualification scoring, and automated lead pipeline management.
+- **Repository**: [https://github.com/mamoonashraff/nexus-sales-ai](https://github.com/mamoonashraff/nexus-sales-ai)
 
 ### 2. **Barakah Scents**
 - **Role**: Frontend Developer (Team Collaboration)
