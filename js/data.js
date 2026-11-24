@@ -23,7 +23,7 @@ const PORTFOLIO_DATA = {
     { label: "Current Semester", value: "3rd", subtext: "BS CS @ IST Pakistan" },
     { label: "Featured Projects", value: "3+", subtext: "AI Swarm, Web & Games" },
     { label: "Core Technologies", value: "10+", subtext: "Linux, Python, C++, SQL" },
-    { label: "Certifications", value: "Cisco", subtext: "In Progress (CCNA & CyberOps)" }
+    { label: "Certifications", value: "4+", subtext: "Google Verified & Cisco" }
   ],
 
   education: {
@@ -159,16 +159,88 @@ const PORTFOLIO_DATA = {
 
   certifications: [
     {
-      title: "Cisco CCNA (In Progress)",
-      org: "Cisco Networking Academy",
-      status: "In Active Pursuit",
-      focus: "Cisco Certified Network Associate — Network fundamentals, IP connectivity, IP services, security fundamentals, automation and programmability."
+      id: "google-foundations-cybersecurity",
+      title: "Foundations of Cybersecurity",
+      org: "Google",
+      platform: "Coursera",
+      date: "Nov 1, 2026",
+      category: "cybersecurity",
+      status: "Completed",
+      credentialId: "8QSAPNHWREQL",
+      verifyUrl: "https://coursera.org/verify/8QSAPNHWREQL",
+      pdfUrl: "assets/certificates/google-foundations-of-cybersecurity.pdf",
+      icon: "fas fa-shield-halved",
+      focus: "Core cybersecurity principles, security ethics, threat landscape, SIEM concepts, and foundational defensive security frameworks."
     },
     {
-      title: "Cisco CyberOps Associate (In Progress)",
+      id: "google-ai-fundamentals",
+      title: "AI Fundamentals",
+      org: "Google",
+      platform: "Coursera",
+      date: "Oct 29, 2026",
+      category: "ai",
+      status: "Completed",
+      credentialId: "MCN3QW08F9YP",
+      verifyUrl: "https://coursera.org/verify/MCN3QW08F9YP",
+      pdfUrl: "assets/certificates/google-ai-fundamentals.pdf",
+      icon: "fas fa-brain",
+      focus: "Core artificial intelligence concepts, generative AI workflows, responsible AI practices, and practical prompt engineering."
+    },
+    {
+      id: "google-ai-brainstorming-planning",
+      title: "AI for Brainstorming and Planning",
+      org: "Google",
+      platform: "Coursera",
+      date: "Nov 1, 2026",
+      category: "ai",
+      status: "Completed",
+      credentialId: "6ZOJJL58JENR",
+      verifyUrl: "https://coursera.org/verify/6ZOJJL58JENR",
+      pdfUrl: "assets/certificates/google-ai-brainstorming-planning.pdf",
+      icon: "fas fa-lightbulb",
+      focus: "Using generative AI tools for structured ideation, project planning, workflow decomposition, and strategic decision-making."
+    },
+    {
+      id: "google-ai-research-insights",
+      title: "AI for Research and Insights",
+      org: "Google",
+      platform: "Coursera",
+      date: "Nov 1, 2026",
+      category: "ai",
+      status: "Completed",
+      credentialId: "P2VUQ21YHU8P",
+      verifyUrl: "https://coursera.org/verify/P2VUQ21YHU8P",
+      pdfUrl: "assets/certificates/google-ai-research-insights.pdf",
+      icon: "fas fa-magnifying-glass-chart",
+      focus: "Applying AI techniques to accelerate information synthesis, data-backed research, verification, and actionable analytical insights."
+    },
+    {
+      id: "cisco-ccna",
+      title: "Cisco CCNA",
       org: "Cisco Networking Academy",
-      status: "In Active Pursuit",
-      focus: "Cisco Certified CyberOps Associate — Security concepts, security monitoring, host-based analysis, network intrusion analysis, and security incident response."
+      platform: "Cisco NetAcad",
+      date: "In Progress",
+      category: "cybersecurity",
+      status: "In Progress",
+      credentialId: "",
+      verifyUrl: "",
+      pdfUrl: "",
+      icon: "fas fa-network-wired",
+      focus: "Cisco Certified Network Associate — Network fundamentals, IP connectivity, routing & switching, IP services, security fundamentals, and automation."
+    },
+    {
+      id: "cisco-cyberops",
+      title: "Cisco CyberOps Associate",
+      org: "Cisco Networking Academy",
+      platform: "Cisco NetAcad",
+      date: "In Progress",
+      category: "cybersecurity",
+      status: "In Progress",
+      credentialId: "",
+      verifyUrl: "",
+      pdfUrl: "",
+      icon: "fas fa-user-shield",
+      focus: "Cisco Certified CyberOps Associate — Security operations, threat monitoring, host-based analysis, network intrusion analysis, and incident response."
     }
   ],
 

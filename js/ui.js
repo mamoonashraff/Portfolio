@@ -186,9 +186,62 @@ function showToast(message) {
   }, 4000);
 }
 
+// Render Certifications Grid
+function renderCertifications(certifications, filter = 'all') {
+  const grid = document.getElementById('certifications-grid');
+  if (!grid || !certifications) return;
+
+  const filtered = filter === 'all'
+    ? certifications
+    : certifications.filter(c => c.status === filter);
+
+  grid.innerHTML = filtered.map(c => {
+    const isCompleted = c.status === 'Completed';
+    const brandClass = c.org === 'Google' ? 'cert-google' : 'cert-cisco';
+    const statusClass = isCompleted ? 'cert-status-verified' : 'cert-status-progress';
+    const statusIcon = isCompleted ? 'fas fa-circle-check' : 'fas fa-spinner';
+    const statusText = isCompleted ? 'Verified' : 'In Progress';
+    const issuerIcon = c.org === 'Google' ? 'fab fa-google' : 'fas fa-certificate';
+
+    return `
+      <div class="glass-card cert-card ${brandClass} reveal-on-scroll">
+        <div class="cert-header">
+          <div class="cert-icon-box">
+            <i class="${c.icon || 'fas fa-certificate'}"></i>
+          </div>
+          <span class="cert-status-badge ${statusClass}">
+            <i class="${statusIcon}"></i> ${statusText}
+          </span>
+        </div>
+
+        <div>
+          <h3 class="cert-title">${c.title}</h3>
+          <div class="cert-meta" style="margin-top:6px;">
+            <span><i class="${issuerIcon}"></i> ${c.org} (${c.platform})</span>
+            <span><i class="far fa-calendar-check"></i> ${c.date}</span>
+          </div>
+        </div>
+
+        <p class="cert-desc">${c.focus}</p>
+
+        ${c.credentialId ? `<div class="cert-credential-id"><i class="fas fa-fingerprint" style="color:var(--accent-cyan); margin-right:6px;"></i>ID: ${c.credentialId}</div>` : ''}
+
+        <div class="cert-actions">
+          ${c.verifyUrl ? `<a href="${c.verifyUrl}" target="_blank" rel="noopener noreferrer" class="cert-btn cert-btn-verify"><i class="fas fa-arrow-up-right-from-square"></i> Verify Credential</a>` : ''}
+          ${c.pdfUrl ? `<a href="${c.pdfUrl}" target="_blank" rel="noopener noreferrer" class="cert-btn cert-btn-pdf"><i class="far fa-file-pdf"></i> View PDF</a>` : ''}
+          ${!c.verifyUrl && !c.pdfUrl ? `<span class="tag" style="color:var(--accent-gold); border-color:rgba(251,191,36,0.3);"><i class="fas fa-clock"></i> Active Cisco NetAcad Track</span>` : ''}
+        </div>
+      </div>
+    `;
+  }).join('');
+
+  initScrollObserver();
+}
+
 // Interactive Hero Floating Badge Toggle
 const HERO_BADGES = [
   { icon: "fas fa-shield-halved", sub: "Cisco In-Progress", title: "CCNA & CyberOps", color: "var(--accent-gold)" },
+  { icon: "fab fa-google", sub: "Google Verified (4x)", title: "Cybersecurity & AI", color: "var(--accent-emerald)" },
   { icon: "fas fa-graduation-cap", sub: "3rd Sem BS CS", title: "IST Pakistan", color: "var(--accent-cyan)" },
   { icon: "fas fa-network-wired", sub: "Network Defense", title: "Cybersecurity", color: "var(--accent-purple)" },
   { icon: "fas fa-location-dot", sub: "Hometown", title: "Karak, KP", color: "var(--accent-emerald)" }

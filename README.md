@@ -49,13 +49,26 @@
 
 ---
 
+## 📜 Verified Certifications & Training
+
+| Certificate | Issuer / Platform | Status / Date | Verify |
+| --- | --- | --- | --- |
+| **Foundations of Cybersecurity** | Google (Coursera) | Completed (Nov 1, 2026) | [Verify (`8QSAPNHWREQL`)](https://coursera.org/verify/8QSAPNHWREQL) |
+| **AI Fundamentals** | Google (Coursera) | Completed (Oct 29, 2026) | [Verify (`MCN3QW08F9YP`)](https://coursera.org/verify/MCN3QW08F9YP) |
+| **AI for Brainstorming and Planning** | Google (Coursera) | Completed (Nov 1, 2026) | [Verify (`6ZOJJL58JENR`)](https://coursera.org/verify/6ZOJJL58JENR) |
+| **AI for Research and Insights** | Google (Coursera) | Completed (Nov 1, 2026) | [Verify (`P2VUQ21YHU8P`)](https://coursera.org/verify/P2VUQ21YHU8P) |
+| **Cisco CCNA** | Cisco Networking Academy | In Progress | Active Track |
+| **Cisco CyberOps Associate** | Cisco Networking Academy | In Progress | Active Track |
+
+---
+
 ## 🛠️ Technical Stack & Architecture
 
 | Category | Technologies |
 | --- | --- |
 | **Languages** | Python, C++, SQL, JavaScript, HTML5, CSS3, Bash |
 | **Cybersecurity Focus** | Network Security, Ethical Hacking, Linux System Admin, Vulnerability Analysis |
-| **Certifications** | Cisco Networking Academy (*In Progress: Cisco CCNA & Cisco CyberOps Associate*) |
+| **Certifications** | Google Career Certificates (Cybersecurity & AI — Verified) & Cisco NetAcad (*In Progress: CCNA & CyberOps*) |
 | **Web & Software** | Vanilla ES6 JavaScript, HTML5/CSS3, Object-Oriented Software Design |
 | **Tools & OS** | Git & GitHub, VS Code, Linux Fundamentals, Cisco Packet Tracer |
 
@@ -106,7 +119,7 @@ To run this portfolio locally on your machine:
 
 ## 📬 Connect With Me
 
-- **Email**: [mamoonashraff831@gmail.com](mailto:mamoonashraf831@gmail.com)
+- **Email**: [mamoonashraf831@gmail.com](mailto:mamoonashraf831@gmail.com)
 - **LinkedIn**: [linkedin.com/in/mamoon-ashraff](https://www.linkedin.com/in/mamoon-ashraff)
 - **Facebook**: [facebook.com/share/1Gfc7YpvxW/](https://www.facebook.com/share/1Gfc7YpvxW/)
 - **Instagram**: [@mamoon__ashraf](https://instagram.com/mamoon__ashraf)

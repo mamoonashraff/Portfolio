@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', () => {
   renderProjects(PORTFOLIO_DATA.projects, 'all');
 
   // 3. Project Filter Tabs Handler
-  const filterBtns = document.querySelectorAll('.filter-btn');
+  const filterBtns = document.querySelectorAll('.filter-btn:not(.cert-filter-btn)');
   filterBtns.forEach(btn => {
     btn.addEventListener('click', (e) => {
       filterBtns.forEach(b => b.classList.remove('active'));
@@ -21,6 +21,21 @@ document.addEventListener('DOMContentLoaded', () => {
       renderProjects(PORTFOLIO_DATA.projects, category);
     });
   });
+
+  // 3b. Render Initial Certifications & Filter Tabs Handler
+  if (typeof renderCertifications === 'function' && PORTFOLIO_DATA.certifications) {
+    renderCertifications(PORTFOLIO_DATA.certifications, 'all');
+
+    const certFilterBtns = document.querySelectorAll('.cert-filter-btn');
+    certFilterBtns.forEach(btn => {
+      btn.addEventListener('click', (e) => {
+        certFilterBtns.forEach(b => b.classList.remove('active'));
+        e.target.classList.add('active');
+        const statusFilter = e.target.getAttribute('data-cert-filter');
+        renderCertifications(PORTFOLIO_DATA.certifications, statusFilter);
+      });
+    });
+  }
 
   // 4. Initialize Contact Form Toast
   initContactForm();
