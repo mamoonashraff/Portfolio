@@ -246,6 +246,9 @@ const PORTFOLIO_DATA = {
 
   contact: {
     email: "mamoonashraf831@gmail.com",
+    whatsapp: "923359764831",
+    whatsappDisplay: "+92 335 9764831",
+    whatsappUrl: "https://wa.me/923359764831",
     location: "Karak / Islamabad (IST), Pakistan",
     github: "https://github.com/mamoonashraff",
     linkedin: "https://www.linkedin.com/in/mamoon-ashraff",

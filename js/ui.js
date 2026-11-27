@@ -154,26 +154,114 @@ function initScrollObserver() {
   document.querySelectorAll('.reveal-on-scroll').forEach(el => observer.observe(el));
 }
 
-// Contact Form Toast Notification
+// Real Contact Form (FormSubmit AJAX) & WhatsApp Direct Message
 function initContactForm() {
   const form = document.getElementById('contact-form');
+  const submitBtn = document.getElementById('contact-submit-btn');
+  const whatsappBtn = document.getElementById('contact-whatsapp-btn');
+  const nameInput = document.getElementById('user-name');
+  const emailInput = document.getElementById('user-email');
+  const messageInput = document.getElementById('user-message');
+
+  if (whatsappBtn) {
+    whatsappBtn.addEventListener('click', () => {
+      const name = nameInput ? nameInput.value.trim() : '';
+      const email = emailInput ? emailInput.value.trim() : '';
+      const msg = messageInput ? messageInput.value.trim() : '';
+      const phone = (typeof PORTFOLIO_DATA !== 'undefined' && PORTFOLIO_DATA.contact.whatsapp)
+        ? PORTFOLIO_DATA.contact.whatsapp
+        : '923359764831';
+
+      let text = '';
+      if (name || msg) {
+        text = `Hi Mamoon!${name ? ` I'm ${name}.` : ''}${email ? ` (${email})` : ''}\n\n${msg || "I'd like to connect with you regarding a collaboration."}`;
+      } else {
+        text = "Hi Mamoon! I visited your portfolio website and would like to connect with you.";
+      }
+
+      const url = `https://wa.me/${phone}?text=${encodeURIComponent(text)}`;
+      window.open(url, '_blank', 'noopener,noreferrer');
+    });
+  }
+
   if (!form) return;
 
-  form.addEventListener('submit', (e) => {
+  form.addEventListener('submit', async (e) => {
     e.preventDefault();
-    showToast("Message Sent! Thank you Mamoon will get back to you shortly.");
-    form.reset();
+
+    const honey = document.getElementById('form-honey');
+    if (honey && honey.value.trim() !== '') {
+      return; // Bot trapped by honeypot
+    }
+
+    const name = nameInput ? nameInput.value.trim() : '';
+    const email = emailInput ? emailInput.value.trim() : '';
+    const message = messageInput ? messageInput.value.trim() : '';
+
+    if (!name || !email || !message) {
+      showToast("Please fill in your name, email, and message.", "error");
+      return;
+    }
+
+    const originalHtml = submitBtn ? submitBtn.innerHTML : '';
+    if (submitBtn) {
+      submitBtn.disabled = true;
+      submitBtn.innerHTML = `<i class="fas fa-spinner fa-spin"></i> <span>Sending...</span>`;
+    }
+
+    try {
+      const targetEmail = (typeof PORTFOLIO_DATA !== 'undefined' && PORTFOLIO_DATA.contact.email)
+        ? PORTFOLIO_DATA.contact.email
+        : 'mamoonashraf831@gmail.com';
+
+      const response = await fetch(`https://formsubmit.co/ajax/${encodeURIComponent(targetEmail)}`, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+        },
+        body: JSON.stringify({
+          name,
+          email,
+          message,
+          _replyto: email,
+          _subject: `New Portfolio Message from ${name}`,
+          _template: 'table',
+          _captcha: 'false'
+        })
+      });
+
+      const result = await response.json().catch(() => ({}));
+
+      if (response.ok && (result.success === 'true' || result.success === true)) {
+        showToast("Message delivered to Mamoon's Gmail! Thank you for reaching out.", "success");
+        form.reset();
+      } else {
+        throw new Error(result.message || 'Email delivery failed');
+      }
+    } catch (err) {
+      showToast("Could not send email right now. Please try WhatsApp or email directly.", "error");
+    } finally {
+      if (submitBtn) {
+        submitBtn.disabled = false;
+        submitBtn.innerHTML = originalHtml;
+      }
+    }
   });
 }
 
-function showToast(message) {
+function showToast(message, type = 'success') {
   const container = document.getElementById('toast-container');
   if (!container) return;
 
+  const isError = type === 'error';
   const toast = document.createElement('div');
   toast.className = 'toast';
+  if (isError) {
+    toast.style.borderColor = '#ef4444';
+  }
   toast.innerHTML = `
-    <i class="fas fa-check-circle" style="color:var(--accent-emerald); font-size:1.2rem;"></i>
+    <i class="fas ${isError ? 'fa-circle-exclamation' : 'fa-check-circle'}" style="color:${isError ? '#ef4444' : 'var(--accent-emerald)'}; font-size:1.2rem;"></i>
     <span>${message}</span>
   `;
 
@@ -183,7 +271,7 @@ function showToast(message) {
     toast.style.opacity = '0';
     toast.style.transition = 'opacity 0.5s ease';
     setTimeout(() => toast.remove(), 500);
-  }, 4000);
+  }, 4500);
 }
 
 // Render Certifications Grid

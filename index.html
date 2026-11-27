@@ -105,11 +105,12 @@
             </a>
             
             <!-- Quick Social Media Buttons in Hero -->
-            <div style="display:flex; gap:12px; align-items:center; margin-left:8px;">
-              <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-              <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-              <a href="https://github.com/mamoonashraff" target="_blank" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
-              <a href="https://instagram.com/mamoon__ashraf" target="_blank" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <div style="display:flex; gap:12px; align-items:center; margin-left:8px; flex-wrap:wrap; justify-content:center;">
+              <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://github.com/mamoonashraff" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
+              <a href="https://instagram.com/mamoon__ashraf" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="https://wa.me/923359764831" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
             </div>
           </div>
         </div>
@@ -438,6 +439,14 @@
           </div>
 
           <div class="info-item">
+            <div class="info-icon" style="color:#25d366; background:rgba(37, 211, 102, 0.12); border-color:rgba(37, 211, 102, 0.25);"><i class="fab fa-whatsapp"></i></div>
+            <div>
+              <div class="info-title">WhatsApp</div>
+              <div class="info-value"><a href="https://wa.me/923359764831" target="_blank" rel="noopener noreferrer" style="color:inherit;">+92 335 9764831</a></div>
+            </div>
+          </div>
+
+          <div class="info-item">
             <div class="info-icon"><i class="fas fa-map-marker-alt"></i></div>
             <div>
               <div class="info-title">Location</div>
@@ -454,36 +463,46 @@
           </div>
 
           <!-- Contact Social Media Links -->
-          <div style="display:flex; gap:16px; margin-top:10px;">
-            <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
-            <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
-            <a href="https://github.com/mamoonashraff" target="_blank" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
-            <a href="https://instagram.com/mamoon__ashraf" target="_blank" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+          <div style="display:flex; gap:14px; margin-top:10px; flex-wrap:wrap;">
+            <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-linkedin" title="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+            <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-facebook" title="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://github.com/mamoonashraff" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-github" title="GitHub"><i class="fab fa-github"></i></a>
+            <a href="https://instagram.com/mamoon__ashraf" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-instagram" title="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://wa.me/923359764831" target="_blank" rel="noopener noreferrer" class="theme-toggle-btn social-btn-whatsapp" title="WhatsApp"><i class="fab fa-whatsapp"></i></a>
           </div>
         </div>
 
         <!-- Contact Form -->
         <div class="glass-card contact-form-box reveal-on-scroll">
           <form id="contact-form">
+            <!-- Spam Honeypot (hidden from real users) -->
+            <input type="text" id="form-honey" name="_honey" style="display:none;" tabindex="-1" autocomplete="off">
+
             <div class="form-group">
               <label class="form-label" for="user-name">Your Name</label>
-              <input type="text" id="user-name" class="form-input" placeholder="e.g. Ali Khan" required>
+              <input type="text" id="user-name" name="name" class="form-input" placeholder="e.g. Ali Khan" required>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="user-email">Your Email</label>
-              <input type="email" id="user-email" class="form-input" placeholder="e.g. ali@example.com" required>
+              <input type="email" id="user-email" name="email" class="form-input" placeholder="e.g. ali@example.com" required>
             </div>
 
             <div class="form-group">
               <label class="form-label" for="user-message">Your Message</label>
-              <textarea id="user-message" class="form-textarea" placeholder="Hi Mamoon, I'd like to collaborate on..." required></textarea>
+              <textarea id="user-message" name="message" class="form-textarea" placeholder="Hi Mamoon, I'd like to collaborate on..." required></textarea>
             </div>
 
-            <button type="submit" class="btn btn-primary" style="width:100%; justify-content:center;">
-              <span>Send Message</span>
-              <i class="fas fa-paper-plane"></i>
-            </button>
+            <div class="form-actions-row">
+              <button type="submit" id="contact-submit-btn" class="btn btn-primary" style="flex:1; justify-content:center;">
+                <span>Send Email</span>
+                <i class="fas fa-paper-plane"></i>
+              </button>
+              <button type="button" id="contact-whatsapp-btn" class="btn btn-whatsapp" style="flex:1; justify-content:center;">
+                <i class="fab fa-whatsapp" style="font-size:1.15rem;"></i>
+                <span>Send on WhatsApp</span>
+              </button>
+            </div>
           </form>
         </div>
       </div>
@@ -494,10 +513,11 @@
   <footer class="footer">
     <div class="container">
       <div style="display:flex; justify-content:center; gap:16px; margin-bottom:16px;">
-        <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
-        <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
-        <a href="https://github.com/mamoonashraff" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-github"></i></a>
-        <a href="https://instagram.com/mamoon__ashraf" target="_blank" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/in/mamoon-ashraff" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-linkedin-in"></i></a>
+        <a href="https://www.facebook.com/share/1Gfc7YpvxW/" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://github.com/mamoonashraff" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-github"></i></a>
+        <a href="https://instagram.com/mamoon__ashraf" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-instagram"></i></a>
+        <a href="https://wa.me/923359764831" target="_blank" rel="noopener noreferrer" style="color:var(--text-secondary); font-size:1.2rem;"><i class="fab fa-whatsapp"></i></a>
       </div>
       <p>© 2026 <strong>Mamoon Ashraf</strong>. All rights reserved.</p>
       <p style="font-size:0.8rem; margin-top:6px; color:var(--text-muted);">Institute of Space Technology (IST), Pakistan</p>
@@ -514,6 +534,46 @@
     </div>
   </div>
 
+  <!-- Floating AI Portfolio Assistant Widget -->
+  <button class="ai-chat-launcher" id="ai-chat-launcher" aria-label="Open Mamoon AI Assistant" title="Ask Mamoon AI">
+    <i class="fas fa-robot"></i>
+    <span class="ai-launcher-label">Ask AI</span>
+  </button>
+
+  <div class="glass-card ai-chat-widget" id="ai-chat-widget" aria-live="polite">
+    <div class="ai-chat-header">
+      <div class="ai-chat-title-wrap">
+        <div class="ai-chat-avatar"><i class="fas fa-robot"></i></div>
+        <div>
+          <div class="ai-chat-title">Mamoon AI</div>
+          <div class="ai-chat-subtitle">
+            <span class="ai-online-dot"></span>
+            <span id="ai-mode-badge"><i class="fas fa-bolt"></i> Hybrid AI</span>
+          </div>
+        </div>
+      </div>
+      <button class="ai-chat-close" id="ai-chat-close" aria-label="Close AI Assistant">&times;</button>
+    </div>
+
+    <div class="ai-chat-messages" id="ai-chat-messages">
+      <div class="ai-msg ai-msg-bot">
+        Assalam-o-Alaikum! 👋 I'm <strong>Mamoon AI</strong>. Ask me anything about Mamoon's <strong>projects</strong>, <strong>Google &amp; Cisco certifications</strong>, <strong>skills</strong>, or <strong>contact</strong>!
+      </div>
+    </div>
+
+    <div class="ai-quick-chips">
+      <button type="button" class="ai-quick-chip" data-prompt="Tell me about Mamoon's projects">🚀 Projects</button>
+      <button type="button" class="ai-quick-chip" data-prompt="What certifications does Mamoon have?">📜 Certificates</button>
+      <button type="button" class="ai-quick-chip" data-prompt="What are Mamoon's cybersecurity skills?">🛡️ Skills</button>
+      <a href="https://wa.me/923359764831" target="_blank" rel="noopener noreferrer" class="ai-quick-chip ai-chip-wa"><i class="fab fa-whatsapp"></i> WhatsApp</a>
+    </div>
+
+    <form class="ai-chat-input-bar" id="ai-chat-form">
+      <input type="text" id="ai-chat-input" class="ai-chat-input" placeholder="Ask about Mamoon..." autocomplete="off" required>
+      <button type="submit" class="ai-chat-send" aria-label="Send question"><i class="fas fa-paper-plane"></i></button>
+    </form>
+  </div>
+
   <!-- Toast Notification Container -->
   <div class="toast-container" id="toast-container"></div>
 
@@ -521,6 +581,7 @@
   <script src="js/data.js"></script>
   <script src="js/theme.js"></script>
   <script src="js/ui.js"></script>
+  <script src="js/assistant.js"></script>
   <script src="js/app.js"></script>
 </body>
 </html>

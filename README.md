@@ -23,6 +23,8 @@
 - **Filterable Projects Showcase**: Category tabs (*All Work*, *Web Apps*, *OOP & Games*) with rich cards and detailed modal case studies.
 - **Technical Radar & Animated Skill Bars**: Animated progress bars on scroll for Python, C++, SQL, Linux, JavaScript, and HTML/CSS.
 - **Beyond Coding**: Showcasing cybersecurity research, fine art portrait sketching, and digital video production.
+- **Hybrid AI Portfolio Assistant**: Floating glassmorphic chat widget powered by Google Gemini API via Vercel Serverless Function (`/api/chat.js`) with automatic built-in Smart AI fallback on GitHub Pages.
+- **Real Email & WhatsApp Contact**: Functional AJAX email delivery via FormSubmit (`mamoonashraf831@gmail.com`) plus pre-filled WhatsApp direct messaging (`+92 335 9764831`).
 - **Responsive & Accessible**: Mobile-first responsive layout tailored across desktop, tablet, and mobile displays.
 
 ---
@@ -120,6 +122,7 @@ To run this portfolio locally on your machine:
 ## 📬 Connect With Me
 
 - **Email**: [mamoonashraf831@gmail.com](mailto:mamoonashraf831@gmail.com)
+- **WhatsApp**: [+92 335 9764831](https://wa.me/923359764831)
 - **LinkedIn**: [linkedin.com/in/mamoon-ashraff](https://www.linkedin.com/in/mamoon-ashraff)
 - **Facebook**: [facebook.com/share/1Gfc7YpvxW/](https://www.facebook.com/share/1Gfc7YpvxW/)
 - **Instagram**: [@mamoon__ashraf](https://instagram.com/mamoon__ashraf)

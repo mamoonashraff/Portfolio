@@ -53,6 +53,11 @@ document.addEventListener('DOMContentLoaded', () => {
     initMobileDrawer();
   }
 
+  // 8. Initialize Hybrid AI Portfolio Assistant
+  if (typeof initPortfolioAssistant === 'function') {
+    initPortfolioAssistant();
+  }
+
   // 6. Close Modal Event Listeners
   const modalCloseBtn = document.getElementById('modal-close-btn');
   const modalOverlay = document.getElementById('project-modal');
